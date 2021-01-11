@@ -36,3 +36,11 @@ def parse():
     print(items)
     print(f'Parsed {len(items)} items')
     return json.dumps(items)
+
+
+# def check():
+#     items = get_content()
+#     print(f'Parsed {len(items)} items')
+#     obj = Data(title=items[0]['title'], link=items[0]['link'], price=items[0]['price'])
+#     print (obj)
+#     obj.save()
