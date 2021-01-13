@@ -9,8 +9,8 @@ HOST = 'https://shop.kz'
 
 
 def get_html(url, params=None):
-    r = requests.get(url, headers=HEADERS, params=params)
-    return r
+    response = requests.get(url, headers=HEADERS, params=params)
+    return response
 
 
 def get_content(html):

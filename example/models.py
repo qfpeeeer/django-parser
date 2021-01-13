@@ -22,13 +22,6 @@ class Category(models.Model):
     shop = models.CharField(max_length=150)
 
 
-class ProductHistory(models.Model):
-    price = models.IntegerField(default=None)
-    date = models.DateTimeField(auto_now_add=True)
-
-    def __init__(self, Category1):
-        category_id = models.ForeignKey(Category1, on_delete=models.CASCADE, default=None)
-
 class Phone(Category):
 
     def __str__(self):
@@ -53,25 +46,41 @@ class Monitor(Category):
         return 'MONITOR ' + self.title + ' from ' + self.shop
 
 
-class PhoneHistory(ProductHistory):
+class PhoneHistory(models.Model):
+    price = models.IntegerField(default=None)
+    date = models.DateTimeField(auto_now_add=True)
+    category_id = models.ForeignKey(Phone, related_name='prices', on_delete=models.CASCADE, default=None)
+
     def __str__(self):
         return 'PHONE_HISTORY ' + str(self.price) + ' ' + self.date.strftime(
             "%m/%d/%Y, %H:%M:%S")
 
 
-class LaptopHistory(ProductHistory):
+class LaptopHistory(models.Model):
+    price = models.IntegerField(default=None)
+    date = models.DateTimeField(auto_now_add=True)
+    category_id = models.ForeignKey(Laptop, on_delete=models.CASCADE, default=None)
+
     def __str__(self):
         return 'LAPTOP_HISTORY ' + str(self.price) + ' ' + self.date.strftime(
             "%m/%d/%Y, %H:%M:%S")
 
 
-class KeyboardHistory(ProductHistory):
+class KeyboardHistory(models.Model):
+    price = models.IntegerField(default=None)
+    date = models.DateTimeField(auto_now_add=True)
+    category_id = models.ForeignKey(Keyboard, on_delete=models.CASCADE, default=None)
+
     def __str__(self):
         return 'KEYBOARD_HISTORY ' + str(self.price) + ' ' + self.date.strftime(
             "%m/%d/%Y, %H:%M:%S")
 
 
-class MonitorHistory(ProductHistory):
+class MonitorHistory(models.Model):
+    price = models.IntegerField(default=None)
+    date = models.DateTimeField(auto_now_add=True)
+    category_id = models.ForeignKey(Monitor, on_delete=models.CASCADE, default=None)
+
     def __str__(self):
         return 'MONITOR_HISTORY ' + str(self.price) + ' ' + self.date.strftime(
             "%m/%d/%Y, %H:%M:%S")
