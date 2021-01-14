@@ -126,8 +126,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-CELERY_BROKER_URL = 'redis://h:p327e3a275cb8fab55191586a315ef67f413e8a3d8961ba05941878158d560cf7@ec2-108-128-121-228.eu-west-1.compute.amazonaws.com:29069'
-
+# core/settings.py
+CELERY_BROKER_URL = 'redis://demo_app_redis:6379'
 CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 

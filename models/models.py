@@ -1,3 +1,4 @@
+import requests
 from django.db import models
 
 
@@ -20,4 +21,3 @@ class History(models.Model):
     def __str__(self):
         return 'At ' + self.date.strftime("%m/%d/%Y, %H:%M:%S") + " price was " + str(self.price)
 
-# Parser models
