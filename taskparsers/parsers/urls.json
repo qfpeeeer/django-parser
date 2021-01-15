@@ -1,0 +1,78 @@
+[
+  {
+    "HOST": "https://www.sulpak.kz",
+    "shop": "sulpak",
+    "urls": [
+      {
+        "URL": "https://www.sulpak.kz/f/smartfoniy",
+        "category": "phone"
+      },
+      {
+        "URL": "https://www.sulpak.kz/f/noutbuki",
+        "category": "laptop"
+      },
+      {
+        "URL": "https://www.sulpak.kz/f/klaviaturiy",
+        "category": "keyboard"
+      },
+      {
+        "URL": "",
+        "category": "monitor"
+      }
+    ]
+  },
+  {
+    "HOST": "https://shop.kz/",
+    "shop": "Beliy veter",
+    "urls": [
+      {
+        "URL": "https://shop.kz/catalog/smartfony-i-gadzhety/",
+        "category": "phone"
+      },
+      {
+        "URL": "https://shop.kz/noutbuki/",
+        "category": "laptop"
+      },
+      {
+        "URL": "https://shop.kz/klaviatury/",
+        "category": "keyboard"
+      },
+      {
+        "URL": "https://shop.kz/monitory/",
+        "category": "monitor"
+      }
+    ]
+  },
+  {
+    "HOST": "https://www.technodom.kz/",
+    "shop": "Technodom",
+    "urls": [
+      {
+        "URL": "https://www.technodom.kz/smartfony-i-gadzhety/smartfony-i-telefony/smartfony",
+        "category": "phone"
+      },
+      {
+        "URL": "https://www.technodom.kz/noutbuki-i-komp-jutery/noutbuki-i-aksessuary/noutbuki",
+        "category": "laptop"
+      },
+      {
+        "URL": "https://www.technodom.kz/noutbuki-i-komp-jutery/komp-juternye-aksessuary/klaviatury",
+        "category": "keyboard"
+      },
+      {
+        "URL": "https://www.technodom.kz/noutbuki-i-komp-jutery/komp-jutery-i-monitory/monitory",
+        "category": "monitor"
+      }
+    ]
+  },
+  {
+    "HOST": "https://www.mechta.kz",
+    "URL": "https://www.mechta.kz/api/main/catalog_new/index.php",
+    "categories": [
+      "smartfony",
+      "noutbuki",
+      "klaviatury",
+      "monitory"
+    ]
+  }
+]
